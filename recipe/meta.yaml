@@ -23,11 +23,12 @@ requirements:
     - python >=3.6
     # only required to get the version from build.py
     - pybuilder
-    - setuptools
   run:
     - python >=3.6
     - matplotlib-base
     - numpy
+    # can be removed after release of next version
+    - setuptools
 
 test:
   imports:
