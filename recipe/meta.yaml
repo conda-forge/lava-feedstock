@@ -1,5 +1,5 @@
 {% set name = "lava" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/lava-nc/lava/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 93a9958b1306b8a170fda328f70ecdd8d9c02eed274e2fcd7508f4cbc002ce7f
+  sha256: a16a9c64d48e9e4438801acb41b058a8fb8855b7b620c01b0eba5123c8247388
   patches:
     - fix-setup-py.patch
 
@@ -27,8 +27,6 @@ requirements:
     - python >=3.6
     - matplotlib-base
     - numpy
-    # can be removed after release of next version
-    - setuptools
 
 test:
   imports:
@@ -46,8 +44,8 @@ about:
     - src/lava/magma/compiler/LICENSE
     - src/lava/magma/runtime/LICENSE
     - src/lava/proc/LICENSE
-    # - src/lava/utils/LICENSE  # currently missing in src package
-    - src/lava/tutorials/LICENSE
+    - src/lava/utils/LICENSE
+    - tutorials/LICENSE
 
 extra:
   recipe-maintainers:
