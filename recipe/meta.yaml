@@ -27,8 +27,6 @@ requirements:
     - python >=3.6
     - matplotlib-base
     - numpy
-    # can be removed after release of next version
-    - setuptools
 
 test:
   imports:
@@ -46,7 +44,7 @@ about:
     - src/lava/magma/compiler/LICENSE
     - src/lava/magma/runtime/LICENSE
     - src/lava/proc/LICENSE
-    # - src/lava/utils/LICENSE  # currently missing in src package
+    - src/lava/utils/LICENSE
     - src/lava/tutorials/LICENSE
 
 extra:
