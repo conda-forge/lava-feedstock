@@ -45,7 +45,7 @@ about:
     - src/lava/magma/runtime/LICENSE
     - src/lava/proc/LICENSE
     - src/lava/utils/LICENSE
-    - src/lava/tutorials/LICENSE
+    - tutorials/LICENSE
 
 extra:
   recipe-maintainers:
