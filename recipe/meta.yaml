@@ -34,7 +34,7 @@ test:
     - lava.magma
     - lava.proc
   commands:
-    - python -m unittest discover lava/tests "test_*.py"
+    - python -m unittest discover tests/lava "test_*.py"
 
 about:
   home: https://github.com/lava-nc/lava
