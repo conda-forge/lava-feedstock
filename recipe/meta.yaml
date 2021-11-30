@@ -33,6 +33,8 @@ test:
     - lava
     - lava.magma
     - lava.proc
+  commands:
+    - python -m unittest
 
 about:
   home: https://github.com/lava-nc/lava
