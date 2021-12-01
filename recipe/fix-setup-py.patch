@@ -122,6 +122,6 @@ index d27c210..d72aa8d 100644
 +    author = "Lava Project",
 +    description = summary,
 +    url = url,
-+    packages = find_namespace_packages(include=['lava.*'], where='src'),
++    packages = find_namespace_packages(include=['lava.*'], where=['src', 'tests']),
 +    package_dir = {"": "src"},
 +)
