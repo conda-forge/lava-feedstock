@@ -15,7 +15,7 @@ source:
 build:
   number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv && {{ PYTHON }} -m unittest
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -29,10 +29,14 @@ requirements:
     - numpy
 
 test:
+  source_files:
+    - tests
   imports:
     - lava
     - lava.magma
     - lava.proc
+  commands:
+    - python -m unittest
 
 about:
   home: https://github.com/lava-nc/lava
