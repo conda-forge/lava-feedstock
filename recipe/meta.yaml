@@ -1,5 +1,5 @@
 {% set name = "lava" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/lava-nc/lava/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: a16a9c64d48e9e4438801acb41b058a8fb8855b7b620c01b0eba5123c8247388
+  sha256: 8b5a4c622e3f7ce309b0ff9cd23d4ef8dff87589eb80373fe4799cc6b48f0c5c
   patches:
     - fix-setup-py.patch
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
