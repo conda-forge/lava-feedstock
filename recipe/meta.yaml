@@ -9,8 +9,6 @@ package:
 source:
   url: https://github.com/lava-nc/lava/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 8b5a4c622e3f7ce309b0ff9cd23d4ef8dff87589eb80373fe4799cc6b48f0c5c
-  patches:
-    - fix-setup-py.patch
 
 build:
   number: 0
@@ -21,8 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
-    # only required to get the version from build.py
-    - pybuilder
+    - poetry-core
   run:
     - python >=3.6
     - matplotlib-base
@@ -30,6 +27,9 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - unittest2
+    - pytest
   source_files:
     - tests
   imports:
@@ -37,7 +37,7 @@ test:
     - lava.magma
     - lava.proc
   commands:
-    - python -m unittest
+    - pytest
 
 about:
   home: https://github.com/lava-nc/lava
