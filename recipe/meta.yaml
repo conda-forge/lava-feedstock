@@ -28,7 +28,6 @@ requirements:
 
 test:
   requires:
-    - unittest2
     - pytest
   source_files:
     - tests
