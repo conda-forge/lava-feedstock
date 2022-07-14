@@ -1,5 +1,5 @@
 {% set name = "lava" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/lava-nc/lava/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 8b5a4c622e3f7ce309b0ff9cd23d4ef8dff87589eb80373fe4799cc6b48f0c5c
+  sha256: 54c42de3e13b66baf3692e955d6363d814e5409b5c68c1284d961e7680965588
 
 build:
   number: 0
