@@ -25,6 +25,7 @@ requirements:
     - matplotlib-base
     - numpy
     - scipy
+    - networkx
 
 test:
   requires:
