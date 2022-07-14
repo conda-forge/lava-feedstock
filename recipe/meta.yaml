@@ -29,6 +29,7 @@ requirements:
 test:
   requires:
     - pytest
+    - nbformat
   source_files:
     - tests
   imports:
