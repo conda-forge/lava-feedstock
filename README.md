@@ -1,11 +1,11 @@
-About lava
-==========
+About lava-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lava-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lava-nc/lava
 
 Package license: BSD-3-Clause AND LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lava-feedstock/blob/main/LICENSE.txt)
 
 Summary: Lava is an open-source software framework for developing neuro-inspired applications and mapping them to neuromorphic hardware.
 
