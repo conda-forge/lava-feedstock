@@ -11,17 +11,17 @@ source:
   sha256: d418de7401fc9ee34bd8c016b63ff9cefddcbea7211879c2f63418fb755e3659
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6,<3.11
+    - python {{ python_min }}
     - poetry-core
   run:
-    - python >=3.6,<3.11
+    - python >={{ python_min }},<3.11
     - matplotlib-base
     - numpy
     - scipy
@@ -31,6 +31,7 @@ test:
   requires:
     - pytest
     - nbformat
+    - python {{ python_min }}
   source_files:
     - tests
   imports:
